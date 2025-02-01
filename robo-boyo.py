@@ -11,7 +11,7 @@ class Robot():
         print(f"{self.name} has a nap. It was alright.")
 
     def Execising(self):
-        print(f"{self.name} did not enjoy exercising. It feels much older than {self.age}")
+        print(f"{self.name} did not enjoy exercising. He or she feels much older than {self.age}")
 
 def main():
     print("Give your robot a name.")
@@ -25,7 +25,9 @@ def main():
         Robot.Eating(R1)
     elif c3 == "sleep":
         Robot.Sleeping(R1)
-    elif c3 == "execise":
+    elif c3 == "exercise":
         Robot.Execising(R1)
+    input("")
+    print(f"{c1} toodles off now.")
 
 main()
