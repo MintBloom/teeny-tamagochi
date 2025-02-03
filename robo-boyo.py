@@ -22,15 +22,21 @@ def main():
     print("What colour is your robot?")
     c3 = input("-->")
     R1 = Robot(c1, c2, c3)
-    print(f"Would you like {c1} to eat, sleep or exercise?")
-    c4 = input("-->")
-    if c4 == "eat":
-        Robot.Eating(R1)
-    elif c4 == "sleep":
-        Robot.Sleeping(R1)
-    elif c4 == "exercise":
-        Robot.Execising(R1)
+    c4 = 'sleep'
+    while c4 in ("eat", "sleep", "exercise"):
+        print(f"Would you like {c1} to eat, sleep or exercise?")
+        c4 = input("-->")
+        robotThings(c4, R1)    
     input("")
     print(f"{c1} toodles off now.")
+
+def robotThings(choice, robot):
+    if choice == "eat":
+        Robot.Eating(robot)
+    elif choice == "sleep":
+        Robot.Sleeping(robot)
+    elif choice == "exercise":
+        Robot.Execising(robot)
+    return choice
 
 main()
