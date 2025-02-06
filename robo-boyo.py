@@ -22,24 +22,24 @@ class Robot:
     def Eating(self):
         # prints a set of messages to do with feeding the robot 
         print(f"{self.name} is {Colours.RED}hungry{Colours.ENDC} and wants to eat!")
-        input(f"press {Colours.BOLD}enter{Colours.ENDC} to feed {self.name}")
+        input(f"press {Colours.BOLD}enter{Colours.ENDC} to feed {self.name}.")
         print("nom nom...")
         input("")
         print("munch munch...")
         input("")
         print(f"{self.name} has a wonderful meal!")
-        print(f"{self.name} is {Colours.GREEN}happy{Colours.RED}.")
+        print(f"{self.name} is {Colours.GREEN}happy{Colours.ENDC}.")
 
     def Sleeping(self):
         # prints a set of messages to do with letting the robot sleep
         print(f"{self.name} is {Colours.RED}tired{Colours.ENDC} and wants to snooze!")
-        input(f"press {Colours.BOLD}enter{Colours.ENDC} to let {self.name}sleep")
+        input(f"press {Colours.BOLD}enter{Colours.ENDC} to let {self.name} sleep.")
         print("zzzzzzz...")
         input("")
         print("zzzzzzzz...")
         input("")
         print(f"{self.name} feels refreshed!")
-        print(f"{self.name} is quite{Colours.GREEN}satisfied{Colours.RED}.")
+        print(f"{self.name} is quite {Colours.GREEN}satisfied{Colours.ENDC}.")
 
     def Exercising(self):
         # prints a set of messages to do with 
@@ -50,13 +50,13 @@ class Robot:
         print("hufff...")
         input("")
         print("A new personal best deadlift!")
-        print(f"{self.name} is very {Colours.GREEN}happy{Colours.RED}.")
-        print(f"However{self.name} now feels much older than {self.age}")
+        print(f"{self.name} is very {Colours.GREEN}happy{Colours.ENDC}.")
+        print(f"However {self.name} now feels much older than {self.age}.")
 
 def helping(self):
     # decide whether or not to help the robot
     while True:
-        print(f'Would you like to help {self.name}with something?') # this and the line below are turning red for some reason
+        print(f'Would you like to help {self.name} with something?') # this and the line below are turning red for some reason
         choice = input('-->')
         if choice in ('yes' or 'Yes'):
             robotNeeds(self)
@@ -95,4 +95,3 @@ def main():
     print('All done.')
 
 main()
-
